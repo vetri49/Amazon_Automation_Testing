@@ -28,9 +28,9 @@ public class VerifyUserSignedinTest {
 	public static void signedin() {
 		WebElement signin=driver.findElement(By.id("nav-link-accountList"));
 		signin.click();
-		driver.findElement(By.id("ap_email")).sendKeys("vetrivijay86909@gmail.com");
+		driver.findElement(By.id("ap_email")).sendKeys("xxxxxx111@gmail.com");
 		driver.findElement(By.id("continue")).click();
-		driver.findElement(By.id("ap_password")).sendKeys("amazon000");
+		driver.findElement(By.id("ap_password")).sendKeys("xxxxxxxxxxxx");
 		driver.findElement(By.id("signInSubmit")).click();
 		WebDriverWait wait=new WebDriverWait(driver,Duration.ofSeconds(10));
 		WebElement user=wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[@id=\"nav-link-accountList-nav-line-1\"]")));
